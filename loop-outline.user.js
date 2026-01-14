@@ -7,6 +7,8 @@
 // @match        https://loop.microsoft.com/*
 // @match        https://loop.cloud.microsoft/*
 // @grant        GM_addStyle
+// @downloadURL  https://github.com/Plong-Wasin/microsoft-loop-outline-navigator/raw/refs/heads/main/loop-outline.user.js
+// @updateURL    https://github.com/Plong-Wasin/microsoft-loop-outline-navigator/raw/refs/heads/main/loop-outline.user.js
 // ==/UserScript==
 
 (function () {
