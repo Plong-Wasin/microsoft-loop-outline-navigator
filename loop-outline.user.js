@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Microsoft Loop Outline Navigator
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.1
 // @description  Create outline for Microsoft Loop pages, supports Heading and Toggle
 // @author       You
 // @match        https://loop.microsoft.com/*
@@ -317,11 +317,7 @@
         const results = [];
 
         allElements.forEach((el) => {
-            // Extract text from .scriptor-textRun
-            const textRun = el.querySelector(
-                ".scriptor-textRun.scriptor-inline"
-            );
-            const text = textRun ? textRun.textContent.trim() : "";
+            const text = el.innerText.trim();
 
             if (!text) return; // Skip empty heading
 
